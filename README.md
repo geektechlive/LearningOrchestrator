@@ -11,9 +11,22 @@ an intelligent orchestration system. When you ask Claude Code to do something, O
 4. Spawns subagents that execute in isolated contexts (preserving your main context window)
 5. Consolidates results and runs validation on any code output
 6. Reports back with a structured summary of what was done
-
+---
 The system is optimized for a Pro plan — it minimizes token waste through context-economy
-rules, effort-level tuning, and thinking-token awareness on Opus.
+rules, effort-level tuning, and thinking-token awareness on Opus. 
+It will also apply any learnings based on the retrospective. 
+
+**If changes are needed:**
+Report to the user: "Retrospective finding: [specific issue]. Recommend adjusting
+[threshold/tier/effort] for future similar tasks. Apply this change? [Y/N]"
+
+If the user approves, the orchestrator updates the relevant CLAUDE.md section or
+agent frontmatter directly.
+
+**If no changes are needed:**
+Report to the user: "Retrospective: All systems performed as expected. No adjustments."
+
+---
 
 ## What's In the Archive
 
