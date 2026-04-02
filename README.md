@@ -280,13 +280,13 @@ before switching to a more expensive model tier.
 For project-specific workers, create agents in your project's `.claude/agents/` directory.
 These override global agents with the same name within that project only.
 
-Example: A SwiftUI-specific code worker for StackGarden:
+Example: A SwiftUI-specific code worker for COOLGAME:
 
 ```bash
-mkdir -p ~/projects/stackgarden/.claude/agents
+mkdir -p ~/projects/COOLGAME/.claude/agents
 ```
 
-Then create `~/projects/stackgarden/.claude/agents/code-worker.md` with SwiftUI-specific
+Then create `~/projects/COOLGAME/.claude/agents/code-worker.md` with SwiftUI-specific
 conventions in its system prompt. The global code-worker will still handle all other
 projects.
 
